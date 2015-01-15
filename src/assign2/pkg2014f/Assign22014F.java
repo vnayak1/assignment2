@@ -66,6 +66,13 @@ public class Assign22014F {
      */
     public static void doExercise4() {
         // TODO: Complete Exercise #4 Below
+        System.out.println("   * ");
+        System.out.println("  *** ");
+        System.out.println(" ***** ");
+        System.out.println("******* ");
+        System.out.println(" ***** ");
+        System.out.println("  *** ");
+        System.out.println("   * ");
 
     }
 
@@ -83,6 +90,20 @@ public class Assign22014F {
     public static void doExercise9() {
         // TODO: Complete Exercise #9 Below
 
+        float miles, gallons, mpg;
+
+        Scanner s = new Scanner(System.in);
+
+        System.out.println("Numbers of miles Driven:");
+        miles = s.nextFloat();
+
+        System.out.println("Gallons of gas used:");
+        gallons = s.nextFloat();
+
+        mpg = miles / gallons;
+
+        System.out.println("A car's miles-per-gallon :" + mpg);
+
     }
 
     /* Exercise #10
@@ -95,6 +116,24 @@ public class Assign22014F {
     public static void doExercise10() {
         // TODO: Complete Exercise #10 Below
 
+        int score1, score2, score3;
+        float avg;
+
+        Scanner in = new Scanner(System.in);
+
+        System.out.println("Enter the score of first test:");
+        score1 = in.nextInt();
+
+        System.out.println("Enter the score of second test:");
+        score2 = in.nextInt();
+        System.out.println("Enter the score of third test:");
+        score3 = in.nextInt();
+
+        avg = (score1 + score2 + score3) / 3;
+        System.out.println("First test score:" + score1);
+        System.out.println("First test score:" + score2);
+        System.out.println("First test score:" + score3);
+        System.out.println("averege of 3 test:" + avg);
     }
 
     /* Exercise #12
@@ -111,6 +150,24 @@ public class Assign22014F {
      */
     public static void doExercise12() {
         // TODO: Complete Exercise #12 Below
+        String city, firstletter = "";
+        String cityuppercase, citylowercase = "";
+
+        int length;
+        Scanner c = new Scanner(System.in);
+        System.out.println("Enter your favourite city");
+        city = c.next();
+        System.out.println("Enter your favourite city:" + city);
+        length = city.length();
+        System.out.println("Number of character in the city name:" + length);
+        cityuppercase = city.toUpperCase();
+        System.out.println("Name of the city in upper case:" + cityuppercase);
+
+        citylowercase = city.toLowerCase();
+        System.out.println("Name of the city in lower case:" + citylowercase);
+
+        firstletter = String.valueOf(city.charAt(0));
+        System.out.println("First character of city:" + firstletter);
 
     }
 
@@ -138,6 +195,30 @@ public class Assign22014F {
      */
     public static void doExercise16() {
         // TODO: Complete Exercise #16 Below
+        String name, city, college, profession, animaltype, petname = "";
+        int age;
+
+        Scanner story = new Scanner(System.in);
+
+        System.out.println("Enter your name");
+        name = story.next();
+        System.out.println("Enter your age");
+        age = story.nextInt();
+        System.out.println("Enter your city");
+        city = story.next();
+        System.out.println("Enter your college");
+        college = story.next();
+        System.out.println("Enter your profession");
+        profession = story.next();
+        System.out.println("Enter your animal type");
+        animaltype = story.next();
+        System.out.println("Enter your pet's name");
+        petname = story.next();
+
+        System.out.println(" There once was a person named " + name + " who lived in " + city + ". At the age of " + age + ",\n"
+                + "      " + name + " went to college at " + college + ". " + name + " graduated and went to work as a\n"
+                + "     " + profession + ". Then, " + name + " adopted a(n) " + animaltype + " named " + petname + ". They both\n"
+                + "      lived happily ever after.");
 
     }
 }
